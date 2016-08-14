@@ -1,0 +1,52 @@
+//import colors from partial
+@import 'color'; 
+
+//sets styling for nav
+nav{
+
+	border:1px solid black;
+
+	li{
+	display: inline;
+	list-style: none;
+	margin: 10px;
+	font-family: arial black;
+	font-size: 30px;
+	color: $colnav;
+	}
+
+	ul{
+	float: right;
+	}
+}
+
+//sets styling for body
+#bk{
+clear: both;
+}
+
+.a{
+	float: left;
+}
+
+.b{
+	float: right;
+}
+
+img {
+	margin: 2px;
+	border: 1px solid black;
+	padding: 3px;
+}
+
+
+p{
+	font-family: calibri;
+	font-size: 40px;
+	color: $col;
+}
+
+//extends styling from nav
+footer{
+	@extend nav;
+}
